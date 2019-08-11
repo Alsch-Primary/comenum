@@ -1,0 +1,7 @@
+C:\Users\Alsch\source\repos\COMENUM\COMENUM\bin\Debug\COMENUM.exe.config
+C:\Users\Alsch\source\repos\COMENUM\COMENUM\bin\Debug\COMENUM.exe
+C:\Users\Alsch\source\repos\COMENUM\COMENUM\bin\Debug\COMENUM.pdb
+C:\Users\Alsch\source\repos\COMENUM\COMENUM\obj\Debug\COMENUM.csproj.CoreCompileInputs.cache
+C:\Users\Alsch\source\repos\COMENUM\COMENUM\obj\Debug\COMENUM.exe
+C:\Users\Alsch\source\repos\COMENUM\COMENUM\obj\Debug\COMENUM.pdb
+C:\Users\Alsch\source\repos\COMENUM\COMENUM\obj\Debug\COMENUM.csprojAssemblyReference.cache
