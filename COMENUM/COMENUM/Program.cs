@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace COMENUM
         {
             string[] ports = SerialPort.GetPortNames();
             string port_list = "";
-            
+
             foreach (string port in ports)
             {
                 port_list += (port + "\n");
@@ -25,15 +26,23 @@ namespace COMENUM
             {
                 Visible = true,
                 Icon = System.Drawing.SystemIcons.Information,
-                BalloonTipIcon = ToolTipIcon.None, // Setting this property results in an ugly GUID appearing at the bottom of the balloontip 
+                BalloonTipIcon = ToolTipIcon.None, // Setting this property results in a process GUID appearing at the bottom of the balloontip
                 BalloonTipTitle = "Serial Ports Found:",
-                BalloonTipText = port_list,                
+                BalloonTipText = port_list,
             };
 
-
-            notification.ShowBalloonTip(10000);
+            //notification.BalloonTipClicked += new EventHandler(notifyIcon_BaloonTipClicked);
+            notification.ShowBalloonTip(5000);
 
             notification.Dispose();
-        } 
+
+            //Process.Start(@"C:\Program Files\PuTTY\putty.exe");
+        }
+
+        /*
+        static void notifyIcon_BaloonTipClicked(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Program Files\PuTTY\putty.exe");
+        }*/
     }
 }
